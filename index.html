@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para nuestra querida Mona</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Playfair+Display:ital,wght@0,400;1,400&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-fondo: #fcf8f7;
+            --color-acento: #d4a373; /* Dorado suave */
+            --color-rosa: #e99695; /* Rosa viejo */
+            --color-texto: #5a5a5a;
+        }
+
+        body {
+            background-color: var(--color-fondo);
+            background-image: radial-gradient(#f3e7e4 1px, transparent 1px);
+            background-size: 20px 20px; /* Sutil patrón de puntos */
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+            color: var(--color-texto);
+            line-height: 1.6;
+        }
+
+        header {
+            padding: 80px 20px 40px;
+            text-align: center;
+            background: linear-gradient(to bottom, #ffffff, transparent);
+        }
+
+        h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 3.5rem;
+            color: var(--color-rosa);
+            margin: 0;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
+        }
+
+        .subtitulo {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 1.1rem;
+            letter-spacing: 2px;
+            color: var(--color-acento);
+            margin-top: 10px;
+            text-transform: uppercase;
+        }
+
+        .contenedor-fotos {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .foto-card {
+            background: white;
+            padding: 15px;
+            margin-bottom: 50px;
+            border-radius: 2px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+            transform: rotate(-1deg); /* Efecto foto real */
+            transition: transform 0.3s ease;
+        }
+
+        .foto-card:nth-child(even) {
+            transform: rotate(1.5deg);
+        }
+
+        .foto-card:hover {
+            transform: rotate(0deg) scale(1.02);
+        }
+
+        .foto-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border: 1px solid #f0f0f0;
+        }
+
+        .pie-foto {
+            margin-top: 15px;
+            font-family: 'Playfair Display', serif;
+            font-size: 0.9rem;
+            color: #888;
+        }
+
+        footer {
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(to top, #ffffff, transparent);
+        }
+
+        .mensaje-final {
+            max-width: 500px;
+            margin: 0 auto 30px;
+            font-size: 1.1rem;
+            font-style: italic;
+        }
+
+        .firma {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.2rem;
+            color: var(--color-rosa);
+        }
+
+        /* Animación suave al cargar */
+        .animar {
+            animation: aparecer 2s ease-out;
+        }
+
+        @keyframes aparecer {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="animar">
+        <h1>¡Felices 15 años, Mona!</h1>
+        <div class="subtitulo">Nuestra pequeña gran viajera</div>
+    </header>
+
+    <main class="contenedor-fotos animar">
+        <div class="foto-card">
+            <img src="foto1.jpg" alt="Recuerdo 1">
+            <div class="pie-foto">Momentos que guardamos en el alma</div>
+        </div>
+
+        <div class="foto-card">
+            <img src="foto2.jpg" alt="Recuerdo 2">
+            <div class="pie-foto">Tu sonrisa, nuestro mejor regalo</div>
+        </div>
+
+        <div class="foto-card">
+            <img src="foto3.jpg" alt="Recuerdo 3">
+            <div class="pie-foto">Siempre estaremos aquí para ti</div>
+        </div>
+    </main>
+
+    <footer class="animar">
+        <div class="mensaje-final">
+            "En cada kilómetro de tu viaje, recuerda que siempre estamos contigo."
+        </div>
+        <div class="firma">Con todo nuestro amor, Jahir y Karla</div>
+    </footer>
+
+</body>
+</html>
